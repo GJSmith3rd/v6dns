@@ -1,37 +1,74 @@
 {
   "name": "v6dns",
   "version": "1.0.5",
-  "description": "A DNS Server which lets IPv4-prioritized devices to use IPv6 first, or lets IPv6-prioritized devices to use IPv4.",
-  "scripts": {
-    "test": "snyk test"
-  },
-  "author": "Adam Yi",
+  "description": "A DNS Server which lets IPv4-prioritized devices to use IPv6 first, or lets IPv6-prioritized devices to use IPv4. Forked from https://github.com/adamyi/v6dns",
+  "author": "Gilbert Smith",
   "license": "MIT",
-  "dependencies": {
-    "native-dns": "*",
-    "async": "*",
-    "etc": "*",
-    "etc-yaml": "*"
+  "homepage": "https://github.com/GJSmith3rd/template#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GJSmith3rd/template.git"
+  },
+  "scripts": {
+    "test": "snyk test",
+    "init": "npm install",
+    "start": "app.js"
   },
   "bin": {
     "v6dns": "v6dns.js"
   },
-  "main": "v6dns.js",
-  "devDependencies": {
-    "snyk": "^1.16.0"
+  "bugs": {
+    "url": "https://github.com/GJSmith3rd/template/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adamyi/v6dns.git"
+  "devDependencies": {
+    "snyk": "^1.16.0",
+    "browser-sync": "^2.12.3",
+    "del": "^1.2.0",
+    "eslint-stylish": "^0.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-copy": "0.0.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-csso": "^2.0.0",
+    "gulp-filter": "^4.0.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-if": "^2.0.0",
+    "gulp-inject": "^4.0.0",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-less": "^3.0.5",
+    "gulp-license": "^1.1.0",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-plumber": "^1.1.0",
+    "gulp-print": "^2.0.1",
+    "gulp-rename": "1.2.2",
+    "gulp-task-listing": "^1.0.1",
+    "gulp-uglify": "^1.5.3",
+    "gulp-useref": "^3.0.8",
+    "gulp-util": "^3.0.7",
+    "jquery": "^2.2.3",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.1.0",
+    "wiredep": "^4.0.0",
+    "yargs": "^4.6.0"
+  },
+  "dependencies": {
+    "native-dns": "*",
+    "async": "*",
+    "etc": "*",
+    "etc-yaml": "*",
+    "body-parser": "^1.15.0",
+    "compression": "^1.6.1",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "morgan": "^1.7.0",
+    "serve-favicon": "^2.3.0"
   },
   "keywords": [
     "dns",
     "IPv6",
     "relay",
     "v6dns"
-  ],
-  "bugs": {
-    "url": "https://github.com/adamyi/v6dns/issues"
-  },
-  "homepage": "https://github.com/adamyi/v6dns#readme"
+  ]
 }
