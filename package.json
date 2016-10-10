@@ -4,10 +4,10 @@
   "description": "A DNS Server which lets IPv4-prioritized devices to use IPv6 first, or lets IPv6-prioritized devices to use IPv4. Forked from https://github.com/adamyi/v6dns",
   "author": "Gilbert Smith",
   "license": "MIT",
-  "homepage": "https://github.com/GJSmith3rd/template#readme",
+  "homepage": "https://github.com/GJSmith3rd/v6dns#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GJSmith3rd/template.git"
+    "url": "https://github.com/GJSmith3rd/v6dns.git"
   },
   "scripts": {
     "test": "snyk test",
@@ -18,7 +18,7 @@
     "v6dns": "v6dns.js"
   },
   "bugs": {
-    "url": "https://github.com/GJSmith3rd/template/issues"
+    "url": "https://github.com/GJSmith3rd/v6dns/issues"
   },
   "devDependencies": {
     "snyk": "^1.16.0",
