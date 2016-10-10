@@ -1,0 +1,17 @@
+{
+  "name": "Personal-Portfolio-Webpage",
+  "version": "0.1.0",
+  "description": "FreeCodeCamp Zipline 1",
+  "authors": [
+    "Gilbert Smith"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/GJSmith3rd/gjsmith3rd.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {},
+  "dependencies": {}
+}

@@ -1,0 +1,215 @@
+//@import url(https://fonts.googleapis.com/css?family=Petrona|Orbitron:400,500,700,900);
+
+@mainFont: ~"'Orbitron', serif;";
+@accentFont: ~"'Petrona', sans-serif;";
+@textFont: ~"'Open Sans', sans-serif;";
+
+@h1Color: firebrick;
+@h1ShadowColor: forestgreen;
+
+@h2Color: darkgreen;
+@h2ShadowColor: darkred;
+
+@h3Color: darkgreen;
+@h3ShadowColor: limegreen;
+
+@navColor: forestgreen;
+@navColorHover: firebrick;
+
+@navBackgroundColor: #E7E7E7;
+@navBackgroundColorHover: lightgrey;
+
+@textColor: orange;
+@textShadowColor: black;
+
+@shadowColor: darkgrey;
+@accentShadowColor: darkred;
+
+@greyShadow: rgba(0, 0, 0, 0.3);
+@blackShadow: rgba(0, 0, 0, 0.7);
+
+@h1-font-size--xlarge: 76px;
+@h1-font-size--large: @h1-font-size--xlarge - 10;
+@h1-font-size--medium: @h1-font-size--large - 10;
+@h1-font-size--small: @h1-font-size--medium - 10;
+@h1-font-size--xsmall: @h1-font-size--small - 10;
+
+@h2-font-size--xlarge: 66px;
+@h2-font-size--large: @h2-font-size--xlarge - 10;
+@h2-font-size--medium: @h2-font-size--large - 10;
+@h2-font-size--small: @h2-font-size--medium - 10;
+@h2-font-size--xsmall: @h2-font-size--small - 10;
+
+@h3-font-size--xlarge: 66px;
+@h3-font-size--large: @h3-font-size--xlarge - 5;
+@h3-font-size--medium: @h3-font-size--large - 5;
+@h3-font-size--small: @h3-font-size--medium - 5;
+@h3-font-size--xsmall: @h3-font-size--small - 5;
+
+@screen-xlg-min: 1200px;
+@screen-lg-max: 1199px;
+@screen-lg-min: 980px;
+@screen-md-max: 979px;
+@screen-md-min: 768px;
+@screen-sm-max: 767px;
+@screen-sm-min: 481px;
+@screen-xs-max: 480px;
+
+@media only screen and (min-width: @screen-xlg-min) {
+  h1 {
+    font-size: @h1-font-size--xlarge;
+  }
+  h2 {
+    font-size: @h2-font-size--xlarge;
+  }
+  h3 {
+    font-size: @h3-font-size--xlarge;
+  }
+}
+@media only screen and (min-width: @screen-lg-min) and (max-width: @screen-lg-max) {
+  h1 {
+    font-size: @h1-font-size--large;
+  }
+  h2 {
+    font-size: @h2-font-size--large;
+  }
+  h3 {
+    font-size: @h3-font-size--large;
+  }
+}
+@media only screen and (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+  h1 {
+    font-size: @h1-font-size--medium;
+  }
+  h2 {
+    font-size: @h2-font-size--medium;
+  }
+  h3 {
+    font-size: @h3-font-size--medium;
+  }
+}
+@media only screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  h1 {
+    font-size: @h1-font-size--small;
+  }
+  h2 {
+    font-size: @h2-font-size--small;
+  }
+  h3 {
+    font-size: @h3-font-size--small;
+  }
+}
+@media only screen and (max-width: @screen-xs-max) {
+  h1 {
+    font-size: @h1-font-size--xsmall;
+  }
+  h2 {
+    font-size: @h2-font-size--xsmall;
+  }
+  h3 {
+    font-size: @h3-font-size--xsmall;
+  }
+}
+#navbar {
+  background-color: @navBackgroundColor;
+  filter:none;
+}
+.navbar-header {
+  padding-left: 15px;
+  background-color: @navBackgroundColor;
+  &:hover {
+    background-color: @navBackgroundColorHover;
+  }
+}
+.navbar-brand {
+  font-family: @mainFont;
+  color: @navColor !important;
+  /* uncss:ignore */
+  &:hover {
+    color: @navColorHover !important;
+  }
+}
+ul.nav li a {
+  font-family: @accentFont;
+  color: @navColor !important;
+  /* uncss:ignore */
+  &:hover {
+    color: @navColorHover !important;
+    background-color: lightgrey !important;
+  }
+}
+
+h1 {
+  font-family: Orbitron;
+  font-weight: 900;
+  color: @h1Color !important;
+  text-shadow: 2px 1px 2px @h1ShadowColor;
+  &:span {
+    &:img {
+      width: 50%;
+    }
+  }
+}
+h2 {
+  font-family: Petrona;
+  color: @h2Color;
+  text-shadow: 2px 1px 2px @h2ShadowColor;
+}
+h3 {
+  font-family: Orbitron;
+  font-weight: 700;
+  color: @h3Color;
+  text-shadow: 2px 1px 2px @h3ShadowColor;
+}
+p {
+  font-family: @textFont;
+  font-weight: 600;
+  font-size: 20px;
+  color: @textColor;
+}
+.footer {
+  padding-top: 25px;
+  a {
+    font-family: @accentFont;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: @navColor;
+    margin-top: 25px;
+    &:hover {
+      color: @navColorHover;
+      text-decoration: none;
+    }
+  }
+}
+#footer {
+  font-family: @mainFont;
+  padding-top: 15px;
+  padding-left: 10px;
+  font-size: 10px;
+  color: @navColor;
+}
+.jumbotron {
+
+  padding-top: 45;
+  //height:425px;
+  margin-top: 55px;
+  margin-bottom: 5px;
+  display: table;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+#link {
+  color: @textColor;
+  text-shadow: 1px 1px 1px @textShadowColor;
+}
+.panel-heading {
+  font-size: 15px;
+  cursor: pointer;
+  & > span.pull-right {
+    margin-top: -20px;
+  }
+  & > span.main-control {
+    margin-top: -10px;
+  }
+}
